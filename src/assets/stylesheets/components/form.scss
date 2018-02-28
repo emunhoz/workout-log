@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (max-width: 680px) {
+    flex-flow: column;
+    align-items: stretch;
+
+    .input-wrapper {
+      margin-bottom: 20px;
+
+      input[type],
+      select {
+        width: 100%;
+      }
+    }
+  }
+
+  .help {
+    color: #e4655f;
+    font-size: 12px;
+  }
+
+  input[type],
+  select {
+    height: 51px;
+    min-width: 170px;
+    margin-bottom: 5px;
+    padding: .6em 1em;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e6e6e6;
+    border-radius: .25em;
+    background: #ffffff;
+
+    &.success {
+      border-color: #6fce72;
+      box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
+    }
+
+    &.alert {
+      border-color: #e4655f;
+      box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
+    }
+
+    &:focus {
+      border-color: #5f8ee4;
+      box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
+    }
+
+  }
+}
