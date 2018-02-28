@@ -7,8 +7,6 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "build": "node build/build.js"
